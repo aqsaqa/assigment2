@@ -2,26 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* styles/globals.css */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:lightcoral;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+header {
+  background-color: #FFFFFF;
+  height: 85px;
+  box-shadow: 0 0px 5px rgba(117, 195, 16, 0.5);
 }
+
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: lightskyblue;
+}
+
+header h1 {
+  color: #17a24f;
+  font-size: 2rem;
+}
+
+header span {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 40px;
+}
+
+header ul li {
+  font-size: 1.2rem;
+}
+
+header ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #17a24f;
+}
+
+.relative-group {
+  position: relative;
+}
+
+.relative-group ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.relative-group:hover ul {
+  display: block;
+}
+
+.relative-group ul li {
+  padding: 10px;
+}
+
+footer {
+  background-color:lightskyblue;
+  height: 85px;
+  box-shadow: 0 0px 5px rgba(117, 195, 16, 0.6);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 50px 60px;
+  flex-grow: 1;
+}
+
+.container img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+h1.centered {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  color: #17a24f;
+  font-size: 3rem;
+}
+

@@ -1,16 +1,13 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Section from "@/components/Section";
 
 
-export default function Home() {
+export default function Contactus() {
   return (
     <div>
       <Navbar/>
-      <Section/>
+      <h1 className="centered">Contact us</h1>
       <Footer/>
-      
-
     </div>
   );
 }
